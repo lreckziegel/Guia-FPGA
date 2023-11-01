@@ -1,0 +1,114 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/Lucas/Desktop/sumador_completo/simulation/modelsim
+Eff_d
+Z1 w1698104968
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z3 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z4 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z5 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z6 d/home/Lucas/Desktop/sumador_completo/simulation/modelsim
+Z7 8/home/Lucas/Desktop/sumador_completo/FF_D.vhd
+Z8 F/home/Lucas/Desktop/sumador_completo/FF_D.vhd
+l0
+L6
+VR_h_bkNgk6lofkF_OQ9KQ2
+Z9 OV;C;10.1d;51
+31
+Z10 !s108 1698345963.113062
+Z11 !s90 -reportprogress|300|-93|-work|work|/home/Lucas/Desktop/sumador_completo/FF_D.vhd|
+Z12 !s107 /home/Lucas/Desktop/sumador_completo/FF_D.vhd|
+Z13 o-93 -work work -O0
+Z14 tExplicit 1
+!s100 AnE4HZSHNJZe^HCIhISmZ2
+!i10b 1
+Acomportamiento
+R2
+R3
+R4
+R5
+DEx4 work 4 ff_d 0 22 R_h_bkNgk6lofkF_OQ9KQ2
+l13
+L12
+V3A@7IRhLhKB6YYoLCK`<70
+R9
+31
+R10
+R11
+R12
+R13
+R14
+!s100 `W3e0dnTVN]?J:XJEXV>j0
+!i10b 1
+Esumador_completo
+Z15 w1698345441
+R4
+R5
+R6
+Z16 8/home/Lucas/Desktop/sumador_completo/sumador_completo.vhd
+Z17 F/home/Lucas/Desktop/sumador_completo/sumador_completo.vhd
+l0
+L4
+V1RTOIN2FVjf59NaaabDB10
+R9
+31
+Z18 !s108 1698345963.166524
+Z19 !s90 -reportprogress|300|-93|-work|work|/home/Lucas/Desktop/sumador_completo/sumador_completo.vhd|
+Z20 !s107 /home/Lucas/Desktop/sumador_completo/sumador_completo.vhd|
+R13
+R14
+!s100 bDOfccCSbZ8G[EnW6h?aK3
+!i10b 1
+Acomportamiento
+R4
+R5
+DEx4 work 16 sumador_completo 0 22 1RTOIN2FVjf59NaaabDB10
+l19
+L10
+VlkKnGhTa2dcD`0eLU>1TV0
+R9
+31
+R18
+R19
+R20
+R13
+R14
+!s100 GBgmogB826o?AGLjOzG820
+!i10b 1
+Etb_ff_d
+Z21 w1698301386
+R4
+R5
+R6
+Z22 8/home/Lucas/Desktop/sumador_completo/tb_FF_D.vhd
+Z23 F/home/Lucas/Desktop/sumador_completo/tb_FF_D.vhd
+l0
+L4
+VTKLB?=LEEK4iP_J8eWFGb1
+!s100 <KOIo58DSf<=8JPE]zz;N2
+R9
+31
+!i10b 1
+Z24 !s108 1698345963.203333
+Z25 !s90 -reportprogress|300|-93|-work|work|/home/Lucas/Desktop/sumador_completo/tb_FF_D.vhd|
+Z26 !s107 /home/Lucas/Desktop/sumador_completo/tb_FF_D.vhd|
+R13
+R14
+Acomportamiento
+R4
+R5
+DEx4 work 7 tb_ff_d 0 22 TKLB?=LEEK4iP_J8eWFGb1
+l22
+L7
+VhHe54KA<l:F=L60?G>V=P1
+!s100 ff`[lIE<fHh]`NAHWM3nS1
+R9
+31
+!i10b 1
+R24
+R25
+R26
+R13
+R14

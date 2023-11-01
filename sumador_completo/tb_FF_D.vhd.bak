@@ -1,0 +1,23 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity tb_FF_D is
+end tb_FF_D;
+
+architecture comportamiento of tb_FF_D is
+	component FF_D
+		port(
+		D,clock : in std_logic;
+		Q : out std_logic);
+	end FF_D;
+	
+	--Entradas
+	signal D : std_logic := '0';
+	signal clock : std_logic := '0';
+	
+	--Salidas
+	signal Q : std_logic;
+	
+	constant periodo_clock : time := 20ns;
+	
+	
