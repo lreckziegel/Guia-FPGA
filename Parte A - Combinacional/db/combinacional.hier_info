@@ -1,0 +1,12 @@
+|esquematico_b
+LED <= combinacional:inst.LED
+SW1 => combinacional:inst.SW1
+SW2 => combinacional:inst.SW2
+
+
+|esquematico_b|combinacional:inst
+SW1 => LED.IN0
+SW2 => LED.IN1
+LED <= LED.DB_MAX_OUTPUT_PORT_TYPE
+
+

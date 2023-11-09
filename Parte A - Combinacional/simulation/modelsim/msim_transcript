@@ -1,0 +1,45 @@
+# do combinacional_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying /home/Lucas/altera/13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied /home/Lucas/altera/13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {/home/Lucas/Desktop/Guia FPGA/Parte A - Combinacional/combinacional.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity combinacional
+# -- Compiling architecture comportamiento of combinacional
+# 
+# vcom -93 -work work {/home/Lucas/Desktop/Guia FPGA/Parte A - Combinacional/tb_combinacional.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_combinacional
+# -- Compiling architecture comportamiento of tb_combinacional
+# ** Warning: [4] /home/Lucas/Desktop/Guia FPGA/Parte A - Combinacional/tb_combinacional.vhd(30): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] /home/Lucas/Desktop/Guia FPGA/Parte A - Combinacional/tb_combinacional.vhd(31): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] /home/Lucas/Desktop/Guia FPGA/Parte A - Combinacional/tb_combinacional.vhd(32): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] /home/Lucas/Desktop/Guia FPGA/Parte A - Combinacional/tb_combinacional.vhd(33): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiii -L rtl_work -L work -voptargs="+acc"  tb_combinacional
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_combinacional 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_combinacional(comportamiento)
+# Loading work.combinacional(comportamiento)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 50 ns

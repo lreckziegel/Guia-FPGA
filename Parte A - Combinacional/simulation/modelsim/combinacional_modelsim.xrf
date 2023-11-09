@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, /home/Lucas/Desktop/Guia FPGA/Parte A - Combinacional/combinacional.vhd
+source_file = 1, /home/Lucas/Desktop/Guia FPGA/Parte A - Combinacional/Waveform.vwf
+source_file = 1, /home/Lucas/Desktop/Guia FPGA/Parte A - Combinacional/tb_combinacional.vhd
+source_file = 1, /home/Lucas/Desktop/Guia FPGA/Parte A - Combinacional/esquematico_a.bdf
+source_file = 1, /home/Lucas/Desktop/Guia FPGA/Parte A - Combinacional/esquematico_b.bdf
+source_file = 1, /home/Lucas/Desktop/Guia FPGA/Parte A - Combinacional/db/combinacional.cbx.xml
+source_file = 1, /home/Lucas/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, /home/Lucas/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, /home/Lucas/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, /home/Lucas/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = esquematico_b
+instance = comp, \LED~output\, LED~output, esquematico_b, 1
+instance = comp, \SW2~input\, SW2~input, esquematico_b, 1
+instance = comp, \SW1~input\, SW1~input, esquematico_b, 1
+instance = comp, \inst|LED~0\, inst|LED~0, esquematico_b, 1
