@@ -47,8 +47,8 @@ applicable agreement for further details.
 	(port
 		(pt 144 32)
 		(output)
-		(text "z" (rect 0 0 3 12)(font "Arial" ))
-		(text "z" (rect 120 27 123 39)(font "Arial" ))
+		(text "f" (rect 0 0 3 12)(font "Arial" ))
+		(text "f" (rect 120 27 123 39)(font "Arial" ))
 		(line (pt 144 32)(pt 128 32)(line_width 1))
 	)
 	(port

@@ -1,0 +1,81 @@
+|Sumador_restador
+f0 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+clock => inst9.CLK
+clock => inst8.CLK
+clock => inst7.CLK
+clock => inst.CLK
+clock => inst13.CLK
+clock => inst11.CLK
+clock => inst10.CLK
+clock => inst15.CLK
+clock => inst14.CLK
+clock => inst12.CLK
+clock => inst18.CLK
+clock => inst17.CLK
+clock => inst16.CLK
+clock => inst22.CLK
+clock => inst21.CLK
+clock => inst20.CLK
+clock => inst19.CLK
+a0 => inst8.DATAIN
+b0 => inst7.DATAIN
+suma_resta => inst.DATAIN
+f1 <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+a1 => inst11.DATAIN
+b1 => inst10.DATAIN
+f2 <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+a2 => inst14.DATAIN
+b2 => inst12.DATAIN
+f3 <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+a3 => inst17.DATAIN
+b3 => inst16.DATAIN
+C <= inst22.DB_MAX_OUTPUT_PORT_TYPE
+V <= inst21.DB_MAX_OUTPUT_PORT_TYPE
+Z <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+N <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Sumador_restador|sumador_completo:sum0
+a => f~0.IN0
+a => c_out~0.IN0
+b => f~0.IN1
+b => c_out~0.IN1
+c_in => f~1.IN1
+c_in => c_out~1.IN1
+f <= f~1.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Sumador_restador|sumador_completo:sum1
+a => f~0.IN0
+a => c_out~0.IN0
+b => f~0.IN1
+b => c_out~0.IN1
+c_in => f~1.IN1
+c_in => c_out~1.IN1
+f <= f~1.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Sumador_restador|sumador_completo:sum2
+a => f~0.IN0
+a => c_out~0.IN0
+b => f~0.IN1
+b => c_out~0.IN1
+c_in => f~1.IN1
+c_in => c_out~1.IN1
+f <= f~1.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Sumador_restador|sumador_completo:sum3
+a => f~0.IN0
+a => c_out~0.IN0
+b => f~0.IN1
+b => c_out~0.IN1
+c_in => f~1.IN1
+c_in => c_out~1.IN1
+f <= f~1.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out~2.DB_MAX_OUTPUT_PORT_TYPE
+
+

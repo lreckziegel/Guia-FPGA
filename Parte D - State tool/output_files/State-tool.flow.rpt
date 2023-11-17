@@ -1,5 +1,5 @@
 Flow report for State-tool
-Thu Nov  2 16:46:18 2023
+Fri Nov 17 17:41:15 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,15 +40,15 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Thu Nov  2 16:46:18 2023           ;
+; Flow Status                        ; Successful - Fri Nov 17 17:41:15 2023           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; State-tool                                      ;
-; Top-level Entity Name              ; maq_estados                                     ;
+; Top-level Entity Name              ; State_tool                                      ;
 ; Family                             ; Cyclone III                                     ;
 ; Device                             ; EP3C120F780C7                                   ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 8 / 119,088 ( < 1 % )                           ;
-;     Total combinational functions  ; 8 / 119,088 ( < 1 % )                           ;
+; Total logic elements               ; 10 / 119,088 ( < 1 % )                          ;
+;     Total combinational functions  ; 10 / 119,088 ( < 1 % )                          ;
 ;     Dedicated logic registers      ; 3 / 119,088 ( < 1 % )                           ;
 ; Total registers                    ; 3                                               ;
 ; Total pins                         ; 7 / 532 ( 1 % )                                 ;
@@ -64,30 +64,32 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/02/2023 16:45:23 ;
+; Start date & time ; 11/17/2023 17:40:12 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; State-tool          ;
 +-------------------+---------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                            ;
-+-------------------------------------+------------------------+---------------+-------------+----------------+
-; Assignment Name                     ; Value                  ; Default Value ; Entity Name ; Section Id     ;
-+-------------------------------------+------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 0.169895432306876      ; --            ; --          ; --             ;
-; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                   ; --            ; --          ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL) ; <None>        ; --          ; --             ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                     ; --            ; --          ; --             ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                      ; --            ; --          ; --             ;
-; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                   ; --            ; --          ; --             ;
-; PARTITION_COLOR                     ; 16764057               ; --            ; maq_estados ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING  ; --            ; maq_estados ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                 ; --            ; maq_estados ; Top            ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files           ; --            ; --          ; --             ;
-; STATE_MACHINE_PROCESSING            ; Sequential             ; Auto          ; --          ; --             ;
-; TOP_LEVEL_ENTITY                    ; maq_estados            ; State-tool    ; --          ; --             ;
-+-------------------------------------+------------------------+---------------+-------------+----------------+
++----------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                           ;
++-------------------------------------+---------------------------------------+---------------+-------------+----------------+
+; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
++-------------------------------------+---------------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 0.170025361208453                     ; --            ; --          ; --             ;
+; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                  ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                ; <None>        ; --          ; --             ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                     ; --            ; --          ; --             ;
+; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                  ; --            ; --          ; --             ;
+; PARTITION_COLOR                     ; 16764057                              ; --            ; State_tool  ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --            ; State_tool  ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --            ; State_tool  ; Top            ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                   ; --            ; --          ; --             ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --          ; --             ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                          ; --            ; --          ; --             ;
+; STATE_MACHINE_PROCESSING            ; Gray                                  ; Auto          ; --          ; --             ;
+; TOP_LEVEL_ENTITY                    ; State_tool                            ; State-tool    ; --          ; --             ;
++-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -95,12 +97,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:03     ; 1.0                     ; 590 MB              ; 00:00:02                           ;
-; Fitter                    ; 00:00:27     ; 1.0                     ; 882 MB              ; 00:00:27                           ;
-; Assembler                 ; 00:00:10     ; 1.0                     ; 558 MB              ; 00:00:10                           ;
+; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 597 MB              ; 00:00:03                           ;
+; Fitter                    ; 00:00:32     ; 1.0                     ; 893 MB              ; 00:00:33                           ;
+; Assembler                 ; 00:00:10     ; 1.0                     ; 554 MB              ; 00:00:10                           ;
 ; TimeQuest Timing Analyzer ; 00:00:04     ; 1.0                     ; 598 MB              ; 00:00:04                           ;
 ; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 782 MB              ; 00:00:01                           ;
-; Total                     ; 00:00:45     ; --                      ; --                  ; 00:00:44                           ;
+; Total                     ; 00:00:49     ; --                      ; --                  ; 00:00:51                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

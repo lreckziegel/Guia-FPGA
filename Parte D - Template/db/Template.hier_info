@@ -1,0 +1,13 @@
+|template_maq_estados
+clk => state~23.DATAIN
+x => state~4.DATAB
+x => state~5.DATAB
+x => state~1.DATAB
+x => state~3.DATAB
+reset => state~27.DATAIN
+LEDs[0] <= LEDs~1.DB_MAX_OUTPUT_PORT_TYPE
+LEDs[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+LEDs[2] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+LEDs[3] <= LEDs~0.DB_MAX_OUTPUT_PORT_TYPE
+
+

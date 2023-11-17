@@ -1,5 +1,5 @@
 Analysis & Synthesis report for State-tool
-Thu Nov  2 16:45:25 2023
+Fri Nov 17 17:40:15 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -13,7 +13,7 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. State Machine - |maq_estados|fstate
+  8. State Machine - |State_tool|fstate
   9. General Register Statistics
  10. Multiplexer Restructuring Statistics (Restructuring Performed)
  11. Elapsed Time Per Partition
@@ -43,13 +43,13 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Nov  2 16:45:25 2023           ;
+; Analysis & Synthesis Status        ; Successful - Fri Nov 17 17:40:15 2023           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; State-tool                                      ;
-; Top-level Entity Name              ; maq_estados                                     ;
+; Top-level Entity Name              ; State_tool                                      ;
 ; Family                             ; Cyclone III                                     ;
-; Total logic elements               ; 8                                               ;
-;     Total combinational functions  ; 8                                               ;
+; Total logic elements               ; 10                                              ;
+;     Total combinational functions  ; 10                                              ;
 ;     Dedicated logic registers      ; 3                                               ;
 ; Total registers                    ; 3                                               ;
 ; Total pins                         ; 7                                               ;
@@ -66,9 +66,9 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP3C120F780C7      ;                    ;
-; Top-level entity name                                                      ; maq_estados        ; State-tool         ;
+; Top-level entity name                                                      ; State_tool         ; State-tool         ;
 ; Family name                                                                ; Cyclone III        ; Cyclone IV GX      ;
-; State Machine Processing                                                   ; Sequential         ; Auto               ;
+; State Machine Processing                                                   ; Gray               ; Auto               ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
 ; Enable compact report table                                                ; Off                ; Off                ;
@@ -158,13 +158,13 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                              ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                       ; Library ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------------------------+---------+
-; maq_estados.vhd                  ; yes             ; User VHDL File  ; /home/Lucas/Desktop/Guia FPGA/Parte D - State tool/maq_estados.vhd ;         ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                             ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                      ; Library ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
+; State_tool.vhd                   ; yes             ; User VHDL File  ; /home/Lucas/Desktop/Guia FPGA/Parte D - State tool/State_tool.vhd ;         ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
 
 
 +------------------------------------------------------------------+
@@ -172,16 +172,16 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+--------------------+
 ; Resource                                    ; Usage              ;
 +---------------------------------------------+--------------------+
-; Estimated Total logic elements              ; 8                  ;
+; Estimated Total logic elements              ; 10                 ;
 ;                                             ;                    ;
-; Total combinational functions               ; 8                  ;
+; Total combinational functions               ; 10                 ;
 ; Logic element usage by number of LUT inputs ;                    ;
-;     -- 4 input functions                    ; 5                  ;
+;     -- 4 input functions                    ; 7                  ;
 ;     -- 3 input functions                    ; 2                  ;
 ;     -- <=2 input functions                  ; 1                  ;
 ;                                             ;                    ;
 ; Logic elements by mode                      ;                    ;
-;     -- normal mode                          ; 8                  ;
+;     -- normal mode                          ; 10                 ;
 ;     -- arithmetic mode                      ; 0                  ;
 ;                                             ;                    ;
 ; Total registers                             ; 3                  ;
@@ -190,10 +190,10 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;                                             ;                    ;
 ; I/O pins                                    ; 7                  ;
 ; Embedded Multiplier 9-bit elements          ; 0                  ;
-; Maximum fan-out node                        ; fstate.state_bit_1 ;
-; Maximum fan-out                             ; 7                  ;
-; Total fan-out                               ; 45                 ;
-; Average fan-out                             ; 1.80               ;
+; Maximum fan-out node                        ; fstate.state_bit_2 ;
+; Maximum fan-out                             ; 9                  ;
+; Total fan-out                               ; 53                 ;
+; Average fan-out                             ; 1.96               ;
 +---------------------------------------------+--------------------+
 
 
@@ -202,25 +202,25 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |maq_estados               ; 8 (8)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 7    ; 0            ; |maq_estados        ; work         ;
+; |State_tool                ; 10 (10)           ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 7    ; 0            ; |State_tool         ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-Encoding Type:  Sequential Encoding
-+-------------------------------------------------------------------------+
-; State Machine - |maq_estados|fstate                                     ;
-+----------+--------------------+--------------------+--------------------+
-; Name     ; fstate.state_bit_2 ; fstate.state_bit_1 ; fstate.state_bit_0 ;
-+----------+--------------------+--------------------+--------------------+
-; fstate.A ; 0                  ; 0                  ; 0                  ;
-; fstate.B ; 0                  ; 0                  ; 1                  ;
-; fstate.C ; 0                  ; 1                  ; 0                  ;
-; fstate.D ; 0                  ; 1                  ; 1                  ;
-; fstate.E ; 1                  ; 0                  ; 0                  ;
-; fstate.F ; 1                  ; 0                  ; 1                  ;
-; fstate.G ; 1                  ; 1                  ; 0                  ;
-+----------+--------------------+--------------------+--------------------+
+Encoding Type:  Gray Encoding
++----------------------------------------------------------------------------+
+; State Machine - |State_tool|fstate                                         ;
++-------------+--------------------+--------------------+--------------------+
+; Name        ; fstate.state_bit_2 ; fstate.state_bit_1 ; fstate.state_bit_0 ;
++-------------+--------------------+--------------------+--------------------+
+; fstate.OOOO ; 0                  ; 0                  ; 0                  ;
+; fstate.OIIO ; 0                  ; 0                  ; 1                  ;
+; fstate.IIII ; 0                  ; 1                  ; 1                  ;
+; fstate.IOOI ; 0                  ; 1                  ; 0                  ;
+; fstate.IOOO ; 1                  ; 1                  ; 0                  ;
+; fstate.IIOO ; 1                  ; 1                  ; 1                  ;
+; fstate.IIIO ; 1                  ; 0                  ; 1                  ;
++-------------+--------------------+--------------------+--------------------+
 
 
 +------------------------------------------------------+
@@ -238,14 +238,14 @@ Encoding Type:  Sequential Encoding
 +----------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |maq_estados|reg_fstate.B  ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |maq_estados|reg_fstate.D  ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------+
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |State_tool|reg_fstate.OIIO ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |State_tool|reg_fstate.IOOI ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------+
 
 
 +-------------------------------+
@@ -263,23 +263,23 @@ Encoding Type:  Sequential Encoding
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Nov  2 16:45:22 2023
+    Info: Processing started: Fri Nov 17 17:40:12 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off State-tool -c State-tool
 Warning (20028): Parallel compilation is not licensed and has been disabled
-Info (12021): Found 2 design units, including 1 entities, in source file maq_estados.vhd
-    Info (12022): Found design unit 1: maq_estados-BEHAVIOR
-    Info (12023): Found entity 1: maq_estados
-Info (12127): Elaborating entity "maq_estados" for the top level hierarchy
+Info (12021): Found 2 design units, including 1 entities, in source file State_tool.vhd
+    Info (12022): Found design unit 1: State_tool-BEHAVIOR
+    Info (12023): Found entity 1: State_tool
+Info (12127): Elaborating entity "State_tool" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 15 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 17 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 4 output pins
-    Info (21061): Implemented 8 logic cells
+    Info (21061): Implemented 10 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 605 megabytes
-    Info: Processing ended: Thu Nov  2 16:45:25 2023
+    Info: Peak virtual memory: 616 megabytes
+    Info: Processing ended: Fri Nov 17 17:40:15 2023
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 

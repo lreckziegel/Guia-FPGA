@@ -1,0 +1,10 @@
+
+State Machine - |template_maq_estados|state
+Name state.state_bit_2 state.state_bit_1 state.state_bit_0 
+state.OOOO 0 0 0 
+state.OIIO 0 0 1 
+state.IIII 0 1 1 
+state.IOOI 0 1 0 
+state.IOOO 1 1 0 
+state.IIOO 1 1 1 
+state.IIIO 1 0 1 

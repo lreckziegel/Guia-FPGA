@@ -1,23 +1,23 @@
-|maq_estados
-reset => reg_fstate.A.OUTPUTSELECT
-reset => reg_fstate.B.OUTPUTSELECT
-reset => reg_fstate.C.OUTPUTSELECT
-reset => reg_fstate.D.OUTPUTSELECT
-reset => reg_fstate.E.OUTPUTSELECT
-reset => reg_fstate.F.OUTPUTSELECT
-reset => reg_fstate.G.OUTPUTSELECT
-reset => LED3.OUTPUTSELECT
-reset => LED2.OUTPUTSELECT
-reset => LED1.OUTPUTSELECT
-reset => LED0.OUTPUTSELECT
-clock => fstate~1.DATAIN
-x => reg_fstate.DATAB
-x => reg_fstate.DATAB
-x => reg_fstate.DATAB
-x => reg_fstate.DATAB
-LED3 <= LED3.DB_MAX_OUTPUT_PORT_TYPE
-LED2 <= LED2.DB_MAX_OUTPUT_PORT_TYPE
-LED1 <= LED1.DB_MAX_OUTPUT_PORT_TYPE
-LED0 <= LED0.DB_MAX_OUTPUT_PORT_TYPE
+|State_tool
+reset => reg_fstate.OOOO.OUTPUTSELECT
+reset => reg_fstate.OIIO.OUTPUTSELECT
+reset => reg_fstate.IIII.OUTPUTSELECT
+reset => reg_fstate.IOOI.OUTPUTSELECT
+reset => reg_fstate.IOOO.OUTPUTSELECT
+reset => reg_fstate.IIOO.OUTPUTSELECT
+reset => reg_fstate.IIIO.OUTPUTSELECT
+reset => LEDs~2.OUTPUTSELECT
+reset => LEDs~3.OUTPUTSELECT
+reset => LEDs~4.OUTPUTSELECT
+reset => LEDs~5.OUTPUTSELECT
+clock => fstate~4.DATAIN
+x => reg_fstate~1.DATAB
+x => reg_fstate~3.DATAB
+x => reg_fstate~4.DATAB
+x => reg_fstate~5.DATAB
+LEDs[0] <= LEDs~5.DB_MAX_OUTPUT_PORT_TYPE
+LEDs[1] <= LEDs~4.DB_MAX_OUTPUT_PORT_TYPE
+LEDs[2] <= LEDs~3.DB_MAX_OUTPUT_PORT_TYPE
+LEDs[3] <= LEDs~2.DB_MAX_OUTPUT_PORT_TYPE
 
 
